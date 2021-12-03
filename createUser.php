@@ -2,7 +2,7 @@
 $mail = $_POST['nombre'];
 $contrasenia = $_POST['contrasenia'];
 
-$conexion = mysqli_connect("sql107.260mb.net","n260m_28355016","Pacha1234","n260m_28355016_User_proyectoIngenieria") or die("error en la coneccion");
+$conexion = mysqli_connect("usuariosproying.cpi2tw3idinn.us-east-1.rds.amazonaws.com","admin","chuchisA25**","usuariosproying") or die("error en la conexion");
 
 $consulta = "SELECT * FROM Usuarios WHERE Nombre = '$mail' AND Pass = '$contrasenia'";
 $resultado = $conexion->query($consulta);
