@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inisio de Sesión</title>
+
+    <link rel="stylesheet" href="codepen.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+</h2>
+<div class="container" id="container">
+    <div class="form-container sign-up-container">
+        <form action="createUser.php" method="POST">
+            <h1>Crea tu Cuenta</h1>
+            <div class="social-container">
+                <a href="https://www.facebook.com/" class="social"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://mail.google.com/mail/u/0/#inbox" class="social"><i class="fab fa-google-plus-g"></i></a>
+                <a href="https://www.linkedin.com/login/es" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span>o usa tu correo electronico para registrarte</span>
+            <input type="text" placeholder="Nombre" name="nombre" required/>
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Contraseña" name="contrasenia" required />
+            <button type="submit">Registrate</button>
+        </form>
+    </div>
+    <div class="form-container sign-in-container">
+        <form action="validar.php" method="POST">
+            <h1>Inicia Sesión</h1>
+            <div class="social-container">
+                <a href="https://www.facebook.com/" class="social"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://mail.google.com/mail/u/0/#inbox" class="social"><i class="fab fa-google-plus-g"></i></a>
+                <a href="https://www.linkedin.com/login/es" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span>o usa tu cuenta para ingresar</span>
+            <input type="text" placeholder="Email" name="mail" required/>
+            <input type="password" placeholder="Contraseña" name="contraseña" required/>
+            <a href="#">Olvidaste tu contraseña?</a>
+            <button type="submit">Ingresar</button>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>Bienvenido de nuevo!</h1>
+                <p>Para mantenerte conectado con nosotros porfavor ingresa con tu información personal</p>
+                <button class="ghost" id="signIn">Ingresar</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h1>Hola, Amig@!</h1>
+                <p>Ingresa tu información personal y comienza un viaje con nostros</p>
+                <button class="ghost" id="signUp">Registrate</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+</footer>
+<script src="codepen.js"></script>
+</body>
+</html>
